@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Sigmar+One&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root{
+  --Theme : #666666;
+}
+
+html{scroll-behavior:smooth}
+
+html, body, #root{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: grey;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.Button{
+  background: #d3d3d3;
+  padding: 8px 16px;
+  border-radius: 100px;
+  margin: 6px;
+  cursor: pointer;
+  transition: .4s;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  /* box-shadow: 0 0 20px #eee;    */
+  font-weight: 800;
+  font-size: .875rem;      
+}
+
+
+.Button.Green{
+  background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);  
+  background-image: linear-gradient(to right, #76b852 0%, #8DC26F  51%, #76b852  100%);
+}
+.Button.Red{
+  background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%);
+}
+.Button.Blue{
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+}
+.Button.Orange{  
+  background-image: linear-gradient(to right, #f46b45 0%, #eea849  51%, #f46b45  100%);
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+  background-image: linear-gradient(to right, #ffb347 0%, #ffcc33  51%, #ffb347  100%);}
+.Button.Grey{
+  background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);  
+  background-image: linear-gradient(to right, #b6b6b6 0%, #859398 51%, #7d7e81 100%);
+}
+.Button.Purple{
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+}
+
+.Button:hover{
+  /* background: var(--Theme); */
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+}
+
+.Screen {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex : 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: grey;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+/* SETTINGS */
+.Settings{
+  position: fixed;
+  padding: 16px;
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  height: 90%;
+  z-index: 10;
+  background-color: white;
+  border-radius: 16px;
+  transform: translate(-50%, -50%);
+  transition: .4s;
+}
+
+.Settings-Hide{
+  transform: translate(-50%, 100%);
+}
+
+.Settings-Close {
+  background: orange;
+  border-radius: 100%;
+  padding: 8px;
+  font-size: 2rem;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+}
+
+.Settings-Players{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+
+/* GLOBAL */
+h1{
+  font-family: "Sigmar One", sans-serif;
+}
+
+
+/* MENU */
+.Menu{
+  background-color: red;
+}
+
+.MenuButton{
+  height: 48px;
+	width: 48px;
+	border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 2rem;
+  color: black;
+}
+
+/* SCREEN */
+
+.Screen{
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.Word{
+  color: red;
+}
+
+.Modal{
+  background-color: blue;
+}
+
+
+
